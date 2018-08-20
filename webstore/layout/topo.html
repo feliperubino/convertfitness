@@ -6,13 +6,60 @@
 
 <header>
     <div class="header-content hidden-xs">
-        <div class="container">
-            <div class="row">
+        <div class="container">           
+			<div class="col-xs-12 contato">
+				<div class="row">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:email@email.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>						
+					</ul>
+					<a class="telefone" href="tel:+551141178421">(11) 0000-0000</a>
+				</div>
+			</div>
+			<div class="row">
                 <div class="col-xs-3 logo-holder">
                     <<!--##H1_DIV##--> class="logotipo"><!--##LOGOTIPO##--></<!--##H1_DIV##-->>
                 </div>
                 <div class="col-xs-9">
-                    <div class="row no-gutter topo">
+                    <!--div class="row no-gutter topo">
                         <div class="col-xs-12">
                             <div class="links-topo">
                                 <div class="login-cadastro">Ol&aacute; <span id="user-nome">Visitante</span>! <div id="link-user"><a href="" id="link-login">Fa&ccedil;a seu login</a> ou <a href="" id="link-login-2">cadastre-se</a></div></div>
@@ -23,27 +70,36 @@
                             </div>
                             <div class="text-right telefone-topo"></div>
                         </div>
-                    </div>
+                    </div-->
                     <div class="row">
                         <div class="col-xs-12">
                             <fieldset>
                                 <input type="text" class="input-busca" id="input-busca" placeholder='' value="">
-                                <button type="submit" class="botao-busca" id="botao-busca">
-                                    <i class="fa fa-search"></i> Busca
-                                </button>
+								<i class="fa fa-search"></i>
                             </fieldset>
-                            <a href="" rel="Carrinho de compras" class="div-carrinho" id="link-carrinho">
+                            
+							<div class="login">
+								 <a href="javascript:void(0);">Acesse sua conta</a>
+								 <div class="acessar-conta">
+									<form action="#" method="POST">
+										<fieldset>
+											<input type="text" placeholder="Digite seu login" name="login" />
+											<input type="password" placeholder="Digite sua senha" name="senha" />
+											<input type="submit" value="enviar" name="enviar" />
+										</fieldset>
+									</form>
+								 </div>
+							 </div>
+							
+							<a href="" rel="Carrinho de compras" class="div-carrinho" id="link-carrinho">
                                 <span class="fa fa-shopping-cart"></span>
-                                <div class="cart-content hidden-sm">
-                                    <p class="carrinho-texto"></p>
-                                    <p class="cart-total">R$ <!--##VALOR_PRODUTOS_CARRINHO##--></p>
-                                </div>
+								<span  class ="quantidade">2</span>
                             </a>
+							
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
@@ -68,12 +124,11 @@
         <div class="logotipo"><!--##LOGOTIPO##--></div>
         <fieldset>
             <input type="text" class="input-busca" id="input-busca-3" placeholder='' value="">
-            <button type="submit" class="botao-busca" id="botao-busca-3">
-                <i class="fa fa-search"></i> Busca
-            </button>
+            <i class="fa fa-search"></i>
         </fieldset>
         <a href="/carrinho/<!--##CODIGO_LOJA##-->/carrinho" rel="Carrinho de compras" class="div-carrinho">
             <span class="fa fa-shopping-cart"></span>
+			<span class="quantidade">2</span>
         </a>
         <a href="" rel="Meus pedidos" class="link-meus-pedidos">
             <span class="fa fa-user"></span>

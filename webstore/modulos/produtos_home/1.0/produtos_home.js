@@ -4,7 +4,7 @@ function ProdutosHome() {
 function ProdutosHomeRetorno() {
 	try {
 		var template = $('#template').html();
-		var conteudo = '<ul id="prod-list">';
+		var conteudo = '<h3 class="lst-produtos-titulo">Ofertas da semana</h3><ul id="prod-list">';
 
 		var JSON = ApiWS.Json;
 		objetos.ProdutosHome = JSON;
@@ -21,7 +21,7 @@ function ProdutosHomeRetorno() {
 
 			}else if(obj.totalitens > 0){
 
-				for (a = 0; a < obj.totalitens; a++) {
+				for (a = 0; a < 8; a++) {
 					var bloco = BlocoProduto(obj.produtos[a], template);
 					conteudo += bloco;
 				}

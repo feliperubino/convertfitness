@@ -1,6 +1,5 @@
 /*NAVBAR*/
 nav#float-menu, nav.menu-topo{
-	background-color: <!--###PREF_12###-->;
 	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -14,7 +13,7 @@ nav#float-menu, nav.menu-topo{
 	text-align: left;
 }
 .departamentos-nav ul{
-	background-color: <!--###PREF_13###-->;
+	background-color:#631ca8;
 	display: none;
 	transition: 150ms ease;
 }
@@ -68,11 +67,13 @@ nav#float-menu, nav.menu-topo{
 	text-align: center;
 }
 .departamentos-nav{
-	text-align: left;
+	text-align: center;
 	width: 100%;
+	border-bottom:5px solid #631ca8;
+	
 }
 .departamentos-nav > li > p, .departamentos-nav > li > a{
-	color: <!--###PREF_7###-->;
+	color: <!--###PREF_12###-->;
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 600;
@@ -82,7 +83,26 @@ nav#float-menu, nav.menu-topo{
 	text-transform: uppercase;
 	transition: 300ms ease;
 }
+.departamentos-nav > li:first-child > a{
+	font-weight:bold;
+	padding-left: 3.5rem;
+}
+.departamentos-nav > li:first-child > a:before{
+	content:"\f0c9";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+	display:block;
+	height:16px;
+	width:16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position:absolute;
+	left:8px;
+	top: 50%;
+	transform:translateY(-50%);
+}
 .departamentos-nav > li:hover > p, .departamentos-nav > li:hover > a {
-	background-color: <!--###PREF_13###-->;
+	background-color:#631ca8;
 	color: <!--###PREF_8###-->;
 }

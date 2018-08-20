@@ -57,7 +57,7 @@ header fieldset{
 	padding: 0;
 	position: relative;
 	width: 50%;
-	width: calc(100% - 21rem);
+	width: calc(100% - 30rem);
 }
 header fieldset.sem-carrinho{
 	width: 100%;
@@ -65,11 +65,7 @@ header fieldset.sem-carrinho{
 header .input-busca {
 	background-color: white;
 	border: 1px solid #d7d7d7;
-	border-right: 0;
-	border-radius: 4px;
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
-	color: #666;
+	color: #999999;
 	display: block;
 	font-size: 1.2rem;
 	float: left;
@@ -77,6 +73,15 @@ header .input-busca {
 	margin: 0;
 	padding: 0 1rem;
 	width: calc(100% - 4.2rem);
+	font-family:'Ubuntu', sans-serif;
+	font-size:14px;
+	padding: 7px 20px 7px 45px;
+}
+header .input-busca + .fa-search {
+	position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 header .botao-busca {
 	background-color: <!--###PREF_2###-->;
@@ -120,17 +125,12 @@ header .logotipo a {
 	width: 100%;
 }
 header .logotipo a img{
-	bottom: 0;
 	display: block;
 	height: auto;
-	left: 0;
-	margin: auto;
+	margin: 0;
 	max-width: 100%;
 	max-height: 100%;
-	padding: 1rem;
-	position: absolute;
-	right: 0;
-	top: 0;
+	position: relative;
 	width: auto;
 }
 header .div-carrinho {
@@ -139,15 +139,12 @@ header .div-carrinho {
 	float: right;
 	margin: 0 0 2rem;
 	position: relative;
-	width: 19rem;
 }
 header .div-carrinho .fa-shopping-cart {
-	background-color: <!--###PREF_2###-->;
-	border: 1px solid <!--###PREF_2###-->;
 	border-radius: 4px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	color: <!--###PREF_5###-->;
+	color: #535759;
 	display: block;
 	float: left;
 	font-size: 1.5rem;
@@ -380,12 +377,12 @@ span.CarOnPageCodigoProduto {
 #barra-flutuante .input-busca {
 	background-color: white;
 	border: 1px solid #d7d7d7;
-	border-radius: 4px;
 	font-size: 1.2rem;
 	line-height: 4rem;
 	margin: 0;
 	padding: 0 1rem;
 	width: 100%;
+	padding-left:45px;
 }
 #barra-flutuante .botao-busca {
 	background-color: <!--###PREF_2###-->;
@@ -403,7 +400,7 @@ span.CarOnPageCodigoProduto {
 	right: 0;
 	top: 0;
 }
-#barra-flutuante .botao-busca i {
+#barra-flutuante .input-busca + i {
 	display: block;
 	float: left;
 	font-size: 1.5rem;
@@ -411,6 +408,10 @@ span.CarOnPageCodigoProduto {
 	margin: 0;
 	padding: 0;
 	width: 4rem;
+	position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #barra-flutuante fieldset {
 	display: block;
@@ -435,12 +436,16 @@ span.CarOnPageCodigoProduto {
 }
 #barra-flutuante .div-carrinho .fa-shopping-cart {
 	color: <!--###PREF_4###-->;
-	font-size: 2rem;
+	font-size: 3.5rem;
 	line-height: 4rem;
 	padding: 0;
 	position: relative;
 	text-align: center;
 	width: 4rem;
+}
+#barra-flutuante .div-carrinho .fa-shopping-cart + .quantidade{
+	right:12px;
+	left:initial;
 }
 #barra-flutuante .link-menu {
 	float: left;
@@ -549,4 +554,158 @@ span.CarOnPageCodigoProduto {
 .div-carrinho .fa-shopping-cart,
 .div-item .prod-botao-comprar span a{
 	transition: 150ms ease;
+}
+
+
+
+
+
+
+/*	*/
+.contato{
+	padding-top:9px;
+	padding-bottom:10px;
+	border-bottom:1px solid #d6d6d6;
+	margin-bottom:12px;
+}
+.contato ul,
+.contato ul li
+{
+	display:inline-block;
+}
+.contato a.telefone{
+	float:right;
+	font-family:'Ubuntu', sans-serif;
+	color:#666666;
+	font-size:14px;
+	margin-top:6px;
+}
+.quantidade{
+	border-radius: 50%;
+    background-color: #631ca8;
+    display: inline-block;
+    padding: 5px 7px;
+    color: #fff;
+    left: 30px;
+    position: absolute;
+    line-height: 11px;
+	font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+}
+header .div-carrinho .fa-shopping-cart{
+	font-size:3rem;
+}
+.contato ul li i.fa-stack-1x {
+	color: <!--###PREF_29###-->;
+}
+.contato ul li a:hover .fa-stack-1x{
+	color: <!--###PREF_32###-->;
+	font-size: 2.8rem;
+}
+.contato ul li i.fa-stack-2x {
+	color: <!--###PREF_32###-->;
+}
+.contato ul li a:hover .fa-stack-2x{
+	color: <!--###PREF_29###-->;
+}
+header .login{
+	display:inline-block;
+	position:relative;
+}
+header .login a{
+	display:inline-block;
+	background-color: #eaeaea;
+	padding:15px 43px;
+	position:relative;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color:#222222;
+	font-family:'Ubuntu', sans-serif;
+}
+header .login a:before{
+	content:"\f2c0";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+	display:block;
+	height:16px;
+	width:16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position:absolute;
+	left:12px;
+	top: 50%;
+	transform:translateY(-50%);
+}
+header .login a:after{
+	content:"\f107";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+	display:block;
+	height:16px;
+	width:16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position:absolute;
+	right:10px;
+	top: 50%;
+	transform:translateY(-50%);
+}
+header .div-carrinho .fa-shopping-cart{
+	font-size:3.5rem;
+}
+.banner-row .fa-angle-right:before,
+.banner-row .fa-angle-left:before{
+	font-size: 54px;
+    color: white;
+    background: #000;
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+	opacity:0.5;
+}
+.banner-row .fa-angle-right:hover:before,
+.banner-row .fa-angle-left:hover:before{
+	opacity:1;
+}
+header .acessar-conta{
+	display:none;
+}
+header .acessar-conta.active{
+	display:block;
+	position:absolute;
+	top: 47px;
+    background: #eaeaea;
+    padding: 20px;
+    right: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	z-index:9;
+}
+.acessar-conta fieldset{
+	margin-bottom:0;
+}
+.acessar-conta.active input {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    color: #222222;
+    font-family: 'Ubuntu', sans-serif;
+}
+.acessar-conta.active input[type="submit"]{
+	background: #631ca8;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+}
+.acessar-conta.active input[type="submit"]:hover{
+	opacity:0.8;
+}
+.input-busca::placeholder{
+	text-transform:uppercase;
 }

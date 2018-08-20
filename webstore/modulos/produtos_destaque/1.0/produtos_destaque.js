@@ -4,6 +4,39 @@ $(document).ready(function(){
 			window.setTimeout("ProdutosDestaque()", 0);
 		}
 	} catch (e) { console.log(e.message); }
+	
+	
+	$('#prod-destaque .lista-ofertas li').on('mouseover', function(){
+		var precoantigo = $(this).attr('data-precoantigo');
+		var preconovo = $(this).attr('data-preconovo');
+		var precocartao = $(this).attr('data-precocartao');
+		var vezes = $(this).attr('data-vezes');
+		var boleto = $(this).attr('data-boleto');
+		var imagem = $(this).find('img').attr('src');
+		var titulo = $(this).find('p').text();
+		
+		var oferta = $('.oferta-principal');
+		oferta.find('img').attr('src', imagem);
+		oferta.find('h3').text(titulo);
+		oferta.find('.de').text(precoantigo);
+		oferta.find('.por').text(preconovo);
+		oferta.find('.vezes').text(vezes);
+		oferta.find('.cartao strong').text(precocartao);
+		oferta.find('.boleto').text(boleto + ' depósito ou boleto');
+	})
+	
+	$('#grupo-produtos .grupos li').click(function(){
+		$('#grupo-produtos .grupos li').removeClass('active');
+		$(this).addClass('active');
+		var grupo = $(this).find('a').attr('class');
+		$('#grupo-produtos .lista-grupos').hide();
+		$('#grupo-produtos').find('#'+grupo).show();
+	})
+	
+	$('header .login a').click(function(){
+		$(this).parents('.login').find('.acessar-conta').toggleClass('active');
+	})
+	
 });
 
 function ProdutosDestaque() {
@@ -52,7 +85,7 @@ function ProdutosDestaqueRetorno() {
 			});
 
 		}else{
-			$('#prod-destaque').hide();
+			/*$('#prod-destaque').hide();*/
 			empty('destaque');
 		}
 

@@ -1,6 +1,7 @@
 /*FOOTER*/
 footer{
-	background-color: <!--###PREF_29###-->;
+	color: <!--###PREF_29###-->;
+	background:#000;
 }
 footer a {
 	transition: 0.2s ease;
@@ -63,18 +64,19 @@ footer #botao-news i {
 	display: inline-block;
 }
 footer .footer-content {
-	padding: 2rem 0 0;
+	padding: 60px 0 0 0;
 }
 footer .footer-bottom{
 	background-color: white;
 	padding: 1rem 0;
 }
 footer h3 {
-	color: <!--###PREF_32###-->;
+	color: <!--###PREF_29###-->;
 	font-size: 1.8rem;
 	font-weight: 600;
 	line-height: 3rem;
 	margin: 0 0 1rem;
+	text-transform:uppercase;
 }
 footer .lista-footer li {
 	color: <!--###PREF_32###-->;
@@ -193,4 +195,54 @@ footer #categoria-footer li:nth-child(n + 8){
 		font-size: 2.2rem;
 		line-height: 4rem;
 	}
+}
+
+footer .contato{
+	border:none;
+	padding-top:0;
+}
+footer .contato p{
+	margin:0;
+}
+footer .contato ul{
+	margin-top:15px;
+}
+footer .contato ul li i.fa-stack-2x{
+	color:#fff;
+}
+footer .contato ul li i.fa-stack-1x{
+	color:#666666;
+}
+footer .cadastrar-newsletter fieldset{
+	position:relative;
+	margin-bottom:15px;
+}
+footer .cadastrar-newsletter input{
+	width:100%;
+	margin-bottom:10px;
+	font-family:'Ubuntu', sans-serif;
+	padding:20px;
+	border:none;
+	color:#222222;
+}
+footer .cadastrar-newsletter input[type="mail"]{
+	width: 248px;
+}
+footer .cadastrar-newsletter input[type="submit"]{
+	background:#bed942;
+	color:#333333;
+	font-weight:bold;
+	border:none;
+	width: 117px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#fabricante-holder .slick-slider .slick-arrow{
+	display: block;
+    font-size: 20px;
+    top: 57%;
+    transform: translateY(-50%);
+	opacity:1;
+	color:#efefef;
 }

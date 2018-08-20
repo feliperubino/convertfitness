@@ -8,6 +8,7 @@
     <title>Webstore Lojas Virtuais</title>
 
     <link rel="stylesheet" type="text/css" id="css01" href="/css/css.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
 </head>
 
 
@@ -31,13 +32,60 @@
 
 <header>
     <div class="header-content hidden-xs">
-        <div class="container">
-            <div class="row">
+        <div class="container">           
+			<div class="col-xs-12 contato">
+				<div class="row">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:email@email.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com" target="_blank" rel="noopener">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+									<i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+								</span>
+							</a>
+						</li>						
+					</ul>
+					<a class="telefone" href="tel:+551141178421">(11) 0000-0000</a>
+				</div>
+			</div>
+			<div class="row">
                 <div class="col-xs-3 logo-holder">
                     <h1 class="logotipo"><a href="/" title="Ir para a home" class="LV_LogotipoImg"><img src="/img/logo.png" comp="350" altura="82"></a></h1>
                 </div>
                 <div class="col-xs-9">
-                    <div class="row no-gutter topo">
+                    <!--div class="row no-gutter topo">
                         <div class="col-xs-12">
                             <div class="links-topo">
                                 <div class="login-cadastro">Ol&aacute; <span id="user-nome">Visitante</span>! <div id="link-user"><a href="" id="link-login">Fa&ccedil;a seu login</a> ou <a href="" id="link-login-2">cadastre-se</a></div></div>
@@ -48,27 +96,36 @@
                             </div>
                             <div class="text-right telefone-topo"></div>
                         </div>
-                    </div>
+                    </div-->
                     <div class="row">
                         <div class="col-xs-12">
                             <fieldset>
                                 <input type="text" class="input-busca" id="input-busca" placeholder='' value="">
-                                <button type="submit" class="botao-busca" id="botao-busca">
-                                    <i class="fa fa-search"></i> Busca
-                                </button>
+								<i class="fa fa-search"></i>
                             </fieldset>
-                            <a href="" rel="Carrinho de compras" class="div-carrinho" id="link-carrinho">
+                            
+							<div class="login">
+								 <a href="javascript:void(0);">Acesse sua conta</a>
+								 <div class="acessar-conta">
+									<form action="#" method="POST">
+										<fieldset>
+											<input type="text" placeholder="Digite seu login" name="login" />
+											<input type="password" placeholder="Digite sua senha" name="senha" />
+											<input type="submit" value="enviar" name="enviar" />
+										</fieldset>
+									</form>
+								 </div>
+							 </div>
+							
+							<a href="" rel="Carrinho de compras" class="div-carrinho" id="link-carrinho">
                                 <span class="fa fa-shopping-cart"></span>
-                                <div class="cart-content hidden-sm">
-                                    <p class="carrinho-texto"></p>
-                                    <p class="cart-total">R$ 00</p>
-                                </div>
+								<span  class ="quantidade">2</span>
                             </a>
+							
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
@@ -145,12 +202,11 @@
         <div class="logotipo"><a href="/" title="Ir para a home" class="LV_LogotipoImg"><img src="/img/logo.png" comp="350" altura="82"></a></div>
         <fieldset>
             <input type="text" class="input-busca" id="input-busca-3" placeholder='' value="">
-            <button type="submit" class="botao-busca" id="botao-busca-3">
-                <i class="fa fa-search"></i> Busca
-            </button>
+            <i class="fa fa-search"></i>
         </fieldset>
         <a href="/carrinho/<!--##CODIGO_LOJA##-->/carrinho" rel="Carrinho de compras" class="div-carrinho">
             <span class="fa fa-shopping-cart"></span>
+			<span class="quantidade">2</span>
         </a>
         <a href="" rel="Meus pedidos" class="link-meus-pedidos">
             <span class="fa fa-user"></span>
@@ -181,6 +237,10 @@
     </div>
     <div class="col-xs-12 hidden hidden-sm hidden-md hidden-lg" id="banner-mobile">
 	</div>
+	
+	<div class="col-xs-12 banner-menor">
+		<img src="img/banner-2.jpg" />
+	</div>
 </div>
     </div>
 </section>
@@ -191,6 +251,550 @@
 
             <div id="prod-destaque" class="col-xs-12 no-gutter">
     <ul id="destaque-list"></ul>
+	
+	<!--destaques-->
+	<div class="produtos">
+		<div class="col-sm-8 col-xs-12 oferta-principal">
+			<h2>Ofertas da semana</h2>
+			<div class="col-sm-6 col-xs-12">
+				<img src="https://images.webstore.net.br/files/4924/PEQ_513_miniatura-moto-mv-agusta-brutale-1090-rr-1-12.jpg" alt="Miniatura Moto MV Agusta Brutale 1090 RR (1:12)">
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<h3>Miniatura Moto MV Agusta Brutale 1090 RR (1:12)</h3>
+				<span class="de">R$ 1.999,00</span><span class="por">R$ 1.599,00</span>
+				<p>ou 12 X de <span class="vezes">R$14,50</span> sem juros</p>
+				<p class="cartao"><strong>R$1.399,00</strong> 1x no cartão</p>
+				<p class="boleto"><strong>R$1.288,00 depósito ou boleto</strong></p>
+				<a href="javascript:void(0);">Adicionar ao carrinho</a>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<ul class="lista-ofertas">
+				<li class="col-sm-12 col-xs-3" data-precoantigo="1.999,00" data-preconovo="1.599,00" data-precocartao="1.399,00" data-boleto="1.288,00" data-vezes="14.50">
+					<a href="javascript:void(0);">
+						<div class="col-sm-4 col-xs-12">
+							<img src="https://images.webstore.net.br/files/4924/PEQ_513_miniatura-moto-mv-agusta-brutale-1090-rr-1-12.jpg" alt="Miniatura Moto MV Agusta Brutale 1090 RR (1:12)">
+						</div>
+						<div class="col-sm-8 col-xs-12 titulo">
+							<p>Miniatura Moto MV Agusta Brutale 1090 RR (1:12)</p>
+						</div>
+					</a>
+				</li>
+		
+				<li class="col-sm-12 col-xs-3" data-precoantigo="600,00" data-preconovo="550,00" data-precocartao="500,00" data-boleto="350,00" data-vezes="50,00">
+					<a href="javascript:void(0);">
+						<div class="col-sm-4 col-xs-12">
+						<img src="https://images.webstore.net.br/files/4924/PEQ_garrafa-squeeze-de-inox-750ml-fluminense1.jpg" alt="Garrafa Squeeze de Inox 750ml Fluminense">
+						</div>
+						<div class="col-sm-8 col-xs-12 titulo">
+						<p>Garrafa Squeeze de Inox 750ml Fluminense</p>
+						</div>
+					</a>
+				</li>
+		
+				<li class="col-sm-12 col-xs-3" data-precoantigo="500,00" data-preconovo="450,00" data-precocartao="500,00" data-boleto="350,00" data-vezes="41,67">
+					<a href="javascript:void(0);">
+						<div class="col-sm-4 col-xs-12">
+						<img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-bicicleta-porsche-bike-fs-evolution-1-101.jpg" alt="Miniatura Bicicleta Porsche Bike Fs Evolution 1:10">
+						</div>
+						<div class="col-sm-8 col-xs-12 titulo">
+						<p>Miniatura Bicicleta Porsche Bike Fs Evolution (1:10)</p>
+						</div>
+					</a>
+				</li>
+		
+				<li class="col-sm-12 col-xs-3" data-precoantigo="600,00" data-preconovo="550,00" data-precocartao="400,00" data-boleto="350,00" data-vezes="50,00">
+					<a href="javascript:void(0);">
+						<div class="col-sm-4 col-xs-12">
+						<img src="https://images.webstore.net.br/files/4924/PEQ_200_miniatura-vw-van-samba-harley-davidson-1-25.jpg" alt="Miniatura VW Van Samba Harley Davidson (1:25)">
+						</div>
+						<div class="col-sm-8 col-xs-12 titulo">
+						<p>Miniatura VW Van Samba Harley Davidson (1:25)</p>
+						</div>
+					</a>
+				</li>			
+			</ul>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="banners col-xs-12">
+	<div class="row">
+		<img src="img/banner3.jpg" class="col-sm-6 col-xs-12" />
+		<img src="img/banner3.jpg" class="col-sm-6 col-xs-12" />
+	</div>
+</div>
+
+
+<div id="grupo-produtos" class="col-xs-12">
+	<ul class="grupos">
+		<li class="active"><a href="javascript:void(0);" class="grupo-1">Group 1</a>
+		<li><a href="javascript:void(0);" class="grupo-2">Group 2</a>
+		<li><a href="javascript:void(0);" class="grupo-3">Group 3</a>
+		<li><a href="javascript:void(0);" class="grupo-4">Group 4</a>
+		<li><a href="javascript:void(0);" class="grupo-5">Group 5</a>
+	</ul>
+	
+	<!-- Grupo 1 -->
+	<ul id="grupo-1" class="lista-grupos">
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>		
+	</ul>
+	<!-- Fim grupo 1 -->
+	
+	
+	
+	
+	<!-- Grupo 2 -->
+	<ul id="grupo-2" class="lista-grupos">	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B"><img src="https://images.webstore.net.br/files/4924/PEQ_mochila-esportiva-pretoazul-wilson-wtix13352b.jpg" alt="Mochila Esportiva Preto/Azul Wilson - WTIX13352B" class="img-responsive"></a>				
+					</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">Mochila Esportiva Preto/Azul Wilson - WTIX13352B</a></p>
+					<p class="prod-preco"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">R$199,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">3x de R$66,63 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><img src="https://images.webstore.net.br/files/4924/PEQ_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_542_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">9% desconto</span></div>
+					<p class="prod-nome"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)</a></p>
+					<p class="prod-preco"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><strike id="preco-de">R$109,90</strike>R$99,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">3x de R$33,30 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B"><img src="https://images.webstore.net.br/files/4924/PEQ_mochila-esportiva-pretoazul-wilson-wtix13352b.jpg" alt="Mochila Esportiva Preto/Azul Wilson - WTIX13352B" class="img-responsive"></a>				
+					</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">Mochila Esportiva Preto/Azul Wilson - WTIX13352B</a></p>
+					<p class="prod-preco"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">R$199,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">3x de R$66,63 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><img src="https://images.webstore.net.br/files/4924/PEQ_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_542_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">9% desconto</span></div>
+					<p class="prod-nome"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)</a></p>
+					<p class="prod-preco"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><strike id="preco-de">R$109,90</strike>R$99,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">3x de R$33,30 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>	
+	</ul>
+	<!-- Fim grupo 2 -->
+	
+	
+	<!-- Grupo 3 -->
+	<ul id="grupo-3" class="lista-grupos">
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>		
+	</ul>
+	<!-- Fim grupo 3 -->
+	
+	
+	<!-- Grupo 4 -->
+	<ul id="grupo-4" class="lista-grupos">	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B"><img src="https://images.webstore.net.br/files/4924/PEQ_mochila-esportiva-pretoazul-wilson-wtix13352b.jpg" alt="Mochila Esportiva Preto/Azul Wilson - WTIX13352B" class="img-responsive"></a>				
+					</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">Mochila Esportiva Preto/Azul Wilson - WTIX13352B</a></p>
+					<p class="prod-preco"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">R$199,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">3x de R$66,63 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><img src="https://images.webstore.net.br/files/4924/PEQ_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_542_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">9% desconto</span></div>
+					<p class="prod-nome"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)</a></p>
+					<p class="prod-preco"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><strike id="preco-de">R$109,90</strike>R$99,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">3x de R$33,30 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B"><img src="https://images.webstore.net.br/files/4924/PEQ_mochila-esportiva-pretoazul-wilson-wtix13352b.jpg" alt="Mochila Esportiva Preto/Azul Wilson - WTIX13352B" class="img-responsive"></a>				
+					</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">Mochila Esportiva Preto/Azul Wilson - WTIX13352B</a></p>
+					<p class="prod-preco"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">R$199,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/mochila-esportiva-pretoazul-wilson-wtix13352b" title="Mochila Esportiva Preto/Azul Wilson - WTIX13352B">3x de R$66,63 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+	
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><img src="https://images.webstore.net.br/files/4924/PEQ_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_542_carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24.jpg" alt="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">9% desconto</span></div>
+					<p class="prod-nome"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)</a></p>
+					<p class="prod-preco"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)"><strike id="preco-de">R$109,90</strike>R$99,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/carrinho-de-controle-remoto-hummer-2008-hx-concept-1-24" title="Carrinho de Controle Remoto Hummer 2008 Hx Concept (1:24)">3x de R$33,30 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>	
+	</ul>
+	<!-- Fim grupo 4 -->
+	
+	<!-- Grupo 5 -->
+	<ul id="grupo-5" class="lista-grupos">
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><img src="https://images.webstore.net.br/files/4924/PEQ_602_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_535_caixa-de-som-portatil-hummer-h2.jpg" alt="Caixa de Som Portátil Hummer H2" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"><span class="prod-desconto">10% desconto</span></div>
+					<p class="prod-nome"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">Caixa de Som Portátil Hummer H2</a></p>
+					<p class="prod-preco"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2"><strike id="preco-de">R$59,90</strike>R$53,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/caixa-de-som-portatil-hummer-h2" title="Caixa de Som Portátil Hummer H2">3x de R$17,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>
+		<li class="list-item  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="div-item">
+				<div class="prod-img">
+					<a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)"><img src="https://images.webstore.net.br/files/4924/PEQ_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-1"><img src="https://images.webstore.net.br/files/4924/PEQ_411_miniatura-ford-2010-f-150-stx-1-27.jpg" alt="Miniatura Ford 2010 F-150 STX  (1:27)" class="img-responsive img-2"></a>
+				</div>
+				<div class="prod-info" style="">
+					<div class="add"></div>
+					<p class="prod-nome"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">Miniatura Ford 2010 F-150 STX  (1:27)</a></p>
+					<p class="prod-preco"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">R$89,90</a></p>
+					<div class="variacao-preco" style="display: none;">
+						<div class="holder">
+							Ou
+							<p class="prod-preco-parc"><a href="/miniatura-ford-2010-f-150-stx-1-27" title="Miniatura Ford 2010 F-150 STX  (1:27)">3x de R$29,97 sem juros</a></p>
+							<p class="prod-preco-uma"></p>
+						</div>
+					</div>
+					<p class="prod-mais"></p>					
+					<a href="#" class="add-carrinho">Adicionar ao carrinho</a>            
+				</div>
+			</div>
+		</li>		
+	</ul>
+	<!-- Fim grupo 5 -->
+</div>
+
+<div class="col-xs-12 banner-central">
+	<a href="#"><img src="img/banner.jpg"></a>
 </div>
 
             <div id="div-barra-esquerda" class="hidden col-xs-2"><ul id="filtros-lateral" class="hidden"><h3>Filtrar por</h3></ul>
@@ -230,7 +834,7 @@
 
                 <ul id="preloader" class="loading">
 
-    <li class="list-item col-xs-6 col-sm-6 col-md-4 col-lg-3">
+    <li class="list-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
         <div class="div-item">
             <div class="prod-img">
             </div>
@@ -239,7 +843,7 @@
             </div>
         </div>
     </li>
-    <li class="list-item col-xs-6 col-sm-6 col-md-4 col-lg-3">
+    <li class="list-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
         <div class="div-item">
             <div class="prod-img">
             </div>
@@ -248,7 +852,7 @@
             </div>
         </div>
     </li>
-    <li class="list-item col-xs-6 col-sm-6 col-md-4 col-lg-3">
+    <li class="list-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
         <div class="div-item">
             <div class="prod-img">
             </div>
@@ -257,7 +861,7 @@
             </div>
         </div>
     </li>
-    <li class="list-item col-xs-6 col-sm-6 col-md-4 col-lg-3">
+    <li class="list-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
         <div class="div-item">
             <div class="prod-img">
             </div>
@@ -295,7 +899,11 @@
 
         <div id="banner-rodape"></div>
 
-        <div id="fabricante-holder" class="hidden row">
+        <div class="col-xs-12 banner-central">
+	<a href="#"><img src="img/banner.jpg"></a>
+</div>
+
+<div id="fabricante-holder" class="hidden row">
     <div class="col-xs-12">
         <ul id="fabricantes"></ul>
     </div>
@@ -327,16 +935,12 @@
 
             <!--##NOME##-->
 
-            <p class="prod-fabricante"><!--##FAB##--></p>
-
-            <div class="prod-avaliacao">
-                <!--##STARS##-->
-            </div>
 
             <!--##PRECO##-->
 
             <div class="variacao-preco">
                 <div class="holder">
+					Ou
                     <!--##VEZES##-->
                     <!--##UMA##-->
                 </div>
@@ -345,14 +949,15 @@
             <!--##COMPRAR##-->
 
             <p class="prod-mais"><!--##MAIS##--></p>
-            
+			
+			<!--##CARRINHO##-->            
         </div>
     </div>
 </li>
 </div>
 
 <footer>
-    <div class="newsletter-footer">
+    <!--div class="newsletter-footer">
         <div class="container">
             <div class="row">
                 <fieldset>
@@ -374,47 +979,88 @@
                 </fieldset>
             </div>
         </div>
-    </div>
+    </div-->
 
     <div class="container">
         <div class="row footer-content">
-            <div class="col-md-4 col-sm-6 col-xs-12 contato">
-                <h3>Atendimento</h3>
-                <ul class="lista-footer" id="contato-footer"></ul>
-                <ul class="lista-footer" id="social-footer"></ul>
+            <div class="col-md-3 col-sm-6 col-xs-12 informacoes">
+                <h3>Informações</h3>
+				<ul>
+					<li><a href="#">Área do Cliente</a></li>
+					<li><a href="#">Garantia dos Produtos</a></li>
+					<li><a href="#">Atendimento e Dúvidas</a></li>
+					<li><a href="#">Trocas e Devoluções</a></li>
+					<li><a href="#">O Melhor Preço</a></li>
+					<li><a href="#">Formas de Pagamento</a></li>
+					<li><a href="#">Prazos de Entrega</a></li>
+				</ul>
+                <!--ul class="lista-footer" id="contato-footer"></ul>
+                <ul class="lista-footer" id="social-footer"></ul-->
             </div>
-            <div class="col-md-8 col-xs-12">
+            <div class="col-md-9 col-xs-12">
                 <div class="row">
 
-                    <div class="col-md-4 col-sm-6 col-xs-12 categoria">
-                        <h3>Categorias</h3>
-                        <ul class="lista-footer" id="categoria-footer"></ul>
+                    <div class="col-md-4 col-sm-6 col-xs-12 contato">
+                        <h3>Atendimento</h3>
+                        <!--ul class="lista-footer" id="categoria-footer"></ul-->
+						<p>seg a qui das 9h as 18h / sex das 9h as 17h</p>
+						<p>(11) 2446-0995</p>
+						<p>(11) 9 0000-8000</p>
+						<p>suporte@dominio.com.br</p>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/" target="_blank" rel="noopener">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+										<i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.twitter.com/" target="_blank" rel="noopener">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+										<i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:email@email.com" target="_blank" rel="noopener">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+										<i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com" target="_blank" rel="noopener">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+										<i class="fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com" target="_blank" rel="noopener">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+										<i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 institucional">
-                        <h3>Institucional</h3>
-                        <ul class="lista-footer" id="institucional-footer"></ul>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 seguranca">
-                        <h3>Selos e Certificados</h3>
-                        <ul id="footer-seguranca" class="badges-footer">
-                            <!--##TRUSTVOX##-->
-                            <!--##SELO_EBIT##-->
-                            <li class="selo-2"></li>
-                        </ul>
+                    <div class="col-md-5 col-sm-7 col-md-offset-3 col-sm-offset-5  col-xs-12 cadastrar-newsletter">
+                        <h3>Cadastre-se em nossa news</h3>
+                        <fieldset>
+							<input type="text" name="nome" placeholder="DIGITE SEU NOME" />
+							<input type="mail" name="email" placeholder="DIGITE SEU E-MAIL" />
+							<input type="submit" name="cadastrar" value="Cadastrar" />
+						</fieldset>
+						<img src="/img/formas-pagamento.png" />
                     </div>
                     
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <ul id="footer-pagamento" class="badges-footer"></ul>
-                </div>
-                
-                <div id="cnpj-footer" class="col-xs-12 col-sm-6 text-right"></div>
             </div>
         </div>
     </div>

@@ -46,7 +46,8 @@ function BlocoProduto(OBJ, TEMPLATE) {
         if (OBJ.lancamento == true) {
             ADD += '<span class="prod-lancamento">Lan&ccedil;amento</span>';
         }
-        var DESTAQUE = '<span class="prod-detalhes"><a href="' + LINK + '" title="' + TITLE + '">Ver detalhes</a></span>';
+        //var DESTAQUE = '<span class="prod-detalhes"><a href="' + LINK + '" title="' + TITLE + '">Ver detalhes</a></span>';
+		var DESTAQUE = '';
         var NOME = '<p class="prod-nome"><a href="' + LINK + '" title="' + TITLE + '">' + OBJ.nome + '</a></p>';
         if (OBJ.disponivel == true) {
             if (OBJ.precos != null && OBJ.precos != undefined && cfg['preco_apos_login'] == false) {
@@ -141,9 +142,10 @@ function BlocoProduto(OBJ, TEMPLATE) {
                 }
             }
         }
+		var CARRINHO = '<a href="#" class="add-carrinho">Adicionar ao carrinho</a>';
         ADD += '</div>';
-        var find = ["<!--##CLASS##-->", "<!--##FOTO##-->", "<!--##DESTAQUE##-->", "<!--##ADD##-->", "<!--##NOME##-->", "<!--##PRECO##-->", "<!--##VEZES##-->", "<!--##UMA##-->", "<!--##COMPRAR##-->", "<!--##FAB##-->", "<!--##STARS##-->", "<!--##MAIS##-->", "<!--##LINK##-->"];
-        var replace = [CLASS, FOTO, DESTAQUE, ADD, NOME, PRECO, VEZES, UMA, COMPRAR, FAB, STARS, MAIS, LINK];
+        var find = ["<!--##CLASS##-->", "<!--##FOTO##-->", "<!--##DESTAQUE##-->", "<!--##ADD##-->", "<!--##NOME##-->", "<!--##PRECO##-->", "<!--##VEZES##-->", "<!--##UMA##-->", "<!--##COMPRAR##-->", "<!--##MAIS##-->", "<!--##LINK##-->", "<!--##CARRINHO##-->"];
+        var replace = [CLASS, FOTO, DESTAQUE, ADD, NOME, PRECO, VEZES, UMA, COMPRAR, MAIS, LINK, CARRINHO];
         TEMPLATE = replaceStr(TEMPLATE, find, replace);
         return TEMPLATE;
     } catch (e) { console.log(e.message); }
