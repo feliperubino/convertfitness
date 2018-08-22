@@ -3730,25 +3730,28 @@ header fieldset.sem-carrinho{
 	width: 100%;
 }
 header .input-busca {
-	background-color: white;
-	border: 1px solid #d7d7d7;
-	color: #999999;
-	display: block;
-	font-size: 1.2rem;
-	float: left;
-	line-height: 4rem;
-	margin: 0;
-	padding: 0 1rem;
-	width: calc(100% - 4.2rem);
-	font-family:'Ubuntu', sans-serif;
-	font-size:14px;
-	padding: 7px 20px 7px 45px;
+	width: 100%;
+    margin: 0px;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 30px !important;
+    font-size: 13px;
+    color: #6a6a69;
+    font-weight: 300;
+    padding: 0 55px 0 16px;
+    height: 51px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: none !important;
+	font-family: Montserrat, Arial;
 }
 header .input-busca + .fa-search {
 	position: absolute;
-    left: 20px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    color: #ff9000;
+    font-size: 26px;
 }
 header .botao-busca {
 	background-color: #00AFF2;
@@ -3779,7 +3782,6 @@ header .logo-holder{
 	overflow: hidden;
 }
 header .logotipo {
-	height: 10.8rem;
 	margin: 0;
 }
 header .logotipo a {
@@ -4229,17 +4231,48 @@ span.CarOnPageCodigoProduto {
 
 
 /*	*/
+.header-content .contato{
+	background: linear-gradient(90deg,#70e37d,#00bff2);
+	margin-bottom:0;
+	border:none;
+}
+.menu-principal{
+	background:linear-gradient(90deg,#77ef83,#00c9ff);
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.fa-stack{
+	color:#ffffff
+}
+
 .contato{
-	padding-top:9px;
-	padding-bottom:10px;
 	border-bottom:1px solid #d6d6d6;
 	margin-bottom:12px;
 }
-.contato ul,
-.contato ul li
+.contato ul
 {
 	display:inline-block;
 }
+
+.contato ul.redes li{
+	width:30px;
+}
+
+.contato ul.redes li{
+	width:30px;
+	display:inline-block;
+}
+
+.contato ul li a:hover .fa-stack{
+	color:#ff9000
+}
+
+.canais-contato{float:right;color:#ffffff}
+.canais-contato li{padding-left:10px;margin-left:10px;border-left:1px solid rgba(255,255,255,0.2);display:inline-block;font-size:10px;text-transform:uppercase;}
+.canais-contato li:first-child{border:0;margin-left:0}
+.canais-contato li i{margin-right:10px;font-size:13px}
+.canais-contato .tel-whatsapp .fa{margin-right:8px;font-size:14px}
+
 .contato a.telefone{
 	float:right;
 	font-family:'Ubuntu', sans-serif;
@@ -4372,7 +4405,4 @@ header .acessar-conta.active{
 }
 .acessar-conta.active input[type="submit"]:hover{
 	opacity:0.8;
-}
-.input-busca::placeholder{
-	text-transform:uppercase;
 }
