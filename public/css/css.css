@@ -3809,14 +3809,14 @@ header .div-carrinho {
 	margin: 0 0 2rem;
 	position: relative;
 }
-header .div-carrinho .fa-shopping-cart {
+header .div-carrinho .fa-shopping-bag {
 	border-radius: 4px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	color: #535759;
+	color: #ffffff;
 	display: block;
 	float: left;
-	font-size: 1.5rem;
+	font-size: 34px;
 	height: calc(4rem + 2px);
 	line-height: 4rem;
 	padding: 0;
@@ -4268,7 +4268,19 @@ span.CarOnPageCodigoProduto {
 }
 
 .canais-contato{float:right;color:#ffffff}
-.canais-contato li{padding-left:10px;margin-left:10px;border-left:1px solid rgba(255,255,255,0.2);display:inline-block;font-size:10px;text-transform:uppercase;}
+.canais-contato li{padding-left:10px;margin-left:10px;border-left:1px solid rgba(255,255,255,0.2);position:relative;display:inline-block;font-size:10px;text-transform:uppercase;}
+.canais-contato li:not(.tel-whatsapp):before{    
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 50%;}
 .canais-contato li:first-child{border:0;margin-left:0}
 .canais-contato li i{margin-right:10px;font-size:13px}
 .canais-contato .tel-whatsapp .fa{margin-right:8px;font-size:14px}
@@ -4282,10 +4294,10 @@ span.CarOnPageCodigoProduto {
 }
 .quantidade{
 	border-radius: 50%;
-    background-color: #631ca8;
+    background-color: #ff9000;
     display: inline-block;
     padding: 5px 7px;
-    color: #fff;
+    color: #ffffff;
     left: 30px;
     position: absolute;
     line-height: 11px;
@@ -4311,25 +4323,28 @@ header .div-carrinho .fa-shopping-cart{
 header .login{
 	display:inline-block;
 	position:relative;
+	margin: 15px 0;
 }
 header .login a{
 	display:inline-block;
-	background-color: #eaeaea;
-	padding:15px 43px;
 	position:relative;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	color:#222222;
-	font-family:'Ubuntu', sans-serif;
+	font-size: 12px;
+    text-transform: uppercase;
+    color:#ffffff;
+    white-space: nowrap;
+    display: inline;
+    font-weight: 500;
 }
-header .login a:before{
+header .login > a{
+	padding:15px 43px;
+}
+header .login > a:before{
 	content:"\f2c0";
 	font: normal normal normal 14px/1 FontAwesome;
-    font-size: 16px;
+    font-size: 30px;
 	display:block;
-	height:16px;
-	width:16px;
+	height:30px;
+	width:30px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -4338,7 +4353,7 @@ header .login a:before{
 	top: 50%;
 	transform:translateY(-50%);
 }
-header .login a:after{
+header .login > a:after{
 	content:"\f107";
 	font: normal normal normal 14px/1 FontAwesome;
     font-size: 16px;
@@ -4376,16 +4391,20 @@ header .acessar-conta{
 	display:none;
 }
 header .acessar-conta.active{
-	display:block;
-	position:absolute;
-	top: 47px;
-    background: #eaeaea;
+	display: block;
+    position: absolute;
+    top: 30px;
+    background: #ffffff;
     padding: 20px;
-    right: 0;
+    left: 10px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-	z-index:9;
+    z-index: 9;
+    width: 100%;
+}
+header .acessar-conta ul li a{
+	color:#8e8e8e;
 }
 .acessar-conta fieldset{
 	margin-bottom:0;
