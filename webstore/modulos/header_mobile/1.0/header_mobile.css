@@ -1,7 +1,8 @@
 /*HEADER MOBILE*/
 #header-mobile {
-	background-color: <!--###PREF_1###-->;
-	padding: 1rem;
+	background: linear-gradient(90deg,#72e57f,#03c1f3);
+    height: 44px;
+	padding: 0 10px;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -34,7 +35,7 @@
 #header-mobile .link-user span,
 #header-mobile .link-carrinho-mobile span,
 #header-mobile .link-menu span {
-	color: <!--###PREF_4###-->;
+	color: <!--###PREF_1###-->;
 	line-height: 5rem;
 	line-height: calc(5rem - 2px);
 	width: 100%;
@@ -96,6 +97,37 @@
 	display: none;
 }
 
+#header-mobile .login{
+	display:inline-block;
+	padding-right:20px;
+}
+#header-mobile .login .icon svg{
+	width: 27px;
+    height: 27px;
+    fill: <!--###PREF_1###-->;
+}
+#header-mobile .login .icon svg *{
+	stroke: <!--###PREF_1###--> !important;
+}
+
+#header-mobile .div-carrinho {
+	color: #666;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+#header-mobile .div-carrinho svg{
+	fill: <!--###PREF_1###-->;
+    height: 27px;
+    width: 27px;
+}
+#header-mobile .div-carrinho svg * {
+    stroke: <!--###PREF_1###--> !important;
+}
+#header-mobile .user-mob{
+	float:right;
+	padding:7px 15px;
+}
 
 /*MEDIAS*/
 @media screen and (min-width: 768px){

@@ -1,4 +1,7 @@
 /*HEADER*/
+body{
+	font-family: Montserrat, Arial !important;
+}
 header{
 	background-color: <!--###PREF_1###-->;
 	color: <!--###PREF_4###-->;
@@ -53,16 +56,16 @@ header .topo .links-topo {
 header fieldset{
 	display: block;
 	float: left;
-	margin: 0 0 2rem 0;
+	margin: 0;
 	padding: 0;
 	position: relative;
-	width: 50%;
-	width: calc(100% - 30rem);
+	margin-right: 35px;
+	width: calc(100% - 25rem);
 }
 header fieldset.sem-carrinho{
 	width: 100%;
 }
-header .input-busca {
+header .input-busca, #barra-flutuante .input-busca {
 	width: 100%;
     margin: 0px;
     background: #fff;
@@ -78,7 +81,7 @@ header .input-busca {
     box-shadow: none !important;
 	font-family: Montserrat, Arial;
 }
-header .input-busca + .fa-search {
+header .input-busca + .fa-search, #barra-flutuante .input-busca + .fa-search {
 	position: absolute;
     right: 20px;
     top: 50%;
@@ -121,7 +124,6 @@ header .logotipo a {
 	display: block;
 	height: 100%;
 	overflow: hidden;
-	padding: 1rem;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -135,12 +137,20 @@ header .logotipo a img{
 	position: relative;
 	width: auto;
 }
-header .div-carrinho {
+header .div-carrinho, #barra-flutuante .div-carrinho {
 	color: #666;
 	display: inline-block;
 	float: right;
-	margin: 0 0 2rem;
+	margin: 15px 0 0 0;
 	position: relative;
+}
+header .div-carrinho svg, #barra-flutuante .div-carrinho svg{
+	fill: <!--###PREF_1###-->;
+    height: 34px;
+    width: 34px;
+}
+header .div-carrinho svg *, #barra-flutuante .div-carrinho svg * {
+    stroke: <!--###PREF_1###--> !important;
 }
 header .div-carrinho .fa-shopping-bag {
 	border-radius: 4px;
@@ -294,7 +304,19 @@ span.CarOnPageCodigoProduto {
 	}
 	header fieldset{
 		width: 70%;
-		width: calc(100% - 6rem);
+		width: calc(100% - 26rem);
+	}
+}
+@media screen and (max-width: 767px){
+	.menu-principal{
+		padding-top:75px !important;
+	}
+	header .logotipo a img{
+		display:block;
+		margin: 0 auto 20px auto;
+	}
+	header fieldset{
+		width: 100%;
 	}
 }
 /*BARRA FLUTUANTE*/
@@ -314,6 +336,7 @@ span.CarOnPageCodigoProduto {
 	opacity: 1;
 	top: 0;
 	visibility: visible;
+	background: linear-gradient(90deg,#77ef83,#00c9ff);
 }
 #barra-flutuante nav {
 	max-height: 0rem;
@@ -332,14 +355,14 @@ span.CarOnPageCodigoProduto {
 	cursor: pointer;
 	display: block;
 	float: left;
-	margin: 1rem 0;
+	margin: 1rem 15px 1rem 0;
 	padding: 0;
 	position: relative;
 	text-align: center;
 	width: 4rem;
 }
 #barra-flutuante #burguer-menu i {
-	color: <!--###PREF_4###-->;
+	color: <!--###PREF_1###-->;
 	display: inline-block;
 	font-size: 2rem;
 	line-height: 4rem;
@@ -347,6 +370,7 @@ span.CarOnPageCodigoProduto {
 	position: relative;
 	text-align: center;
 	width: 4rem;
+	font-size:30px;
 }
 #barra-flutuante .logotipo {
 	display: block;
@@ -356,7 +380,8 @@ span.CarOnPageCodigoProduto {
 	overflow: hidden;
 	padding: 0;
 	text-align: center;
-	width: 16rem;
+	width: 180px;
+    margin-right: 15px;
 }
 #barra-flutuante .logotipo > a {
 	display: block;
@@ -404,14 +429,12 @@ span.CarOnPageCodigoProduto {
 }
 #barra-flutuante .input-busca + i {
 	display: block;
-	float: left;
 	font-size: 1.5rem;
 	line-height: 4rem;
 	margin: 0;
 	padding: 0;
 	width: 4rem;
 	position: absolute;
-    left: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -422,7 +445,8 @@ span.CarOnPageCodigoProduto {
 	padding: 0;
 	position: relative;
 	width: 70%;
-	width: calc(100% - 28rem);
+	width: calc(100% - 50rem);
+    margin-right: 30px;
 }
 #barra-flutuante fieldset.sem-carrinho {
 	width: calc(100% - 27rem);
@@ -430,7 +454,7 @@ span.CarOnPageCodigoProduto {
 #barra-flutuante .div-carrinho {
 	display: block;
 	float: right;
-	margin: 1rem 0;
+	margin: 1.2rem 0;
 	padding: 0;
 	position: relative;
 	text-align: center;
@@ -462,6 +486,10 @@ span.CarOnPageCodigoProduto {
 	width: 100%;
 	font-size: 2rem;
 	color: <!--###PREF_4###-->;
+}
+
+#barra-flutuante #float-menu{
+	background: <!--###PREF_1###-->;
 }
 
 
@@ -568,14 +596,12 @@ span.CarOnPageCodigoProduto {
 	background: linear-gradient(90deg,#70e37d,#00bff2);
 	margin-bottom:0;
 	border:none;
+	line-height:32px;
 }
 .menu-principal{
 	background:linear-gradient(90deg,#77ef83,#00c9ff);
 	padding-top:25px;
 	padding-bottom:25px;
-}
-.fa-stack{
-	color:<!--###PREF_1###-->
 }
 
 .contato{
@@ -589,20 +615,40 @@ span.CarOnPageCodigoProduto {
 
 .contato ul.redes li{
 	width:30px;
-}
-
-.contato ul.redes li{
-	width:30px;
 	display:inline-block;
+	text-align:center;
 }
 
-.contato ul li a:hover .fa-stack{
+.contato ul li i{
+	font-size:16px;
+}
+
+.contato ul li a:hover .fa-stack,
+.contato ul li a:hover i{
 	color:<!--###PREF_17###-->
 }
 
-.canais-contato{float:right;color:<!--###PREF_1###-->}
-.canais-contato li{padding-left:10px;margin-left:10px;border-left:1px solid rgba(255,255,255,0.2);position:relative;display:inline-block;font-size:10px;text-transform:uppercase;}
-.canais-contato li:not(.tel-whatsapp):before{    
+.contato ul.redes li i{
+	color:<!--###PREF_1###-->
+}
+
+.canais-contato{
+	float:right;
+	color:<!--###PREF_1###-->;
+}
+.canais-contato li{
+	padding-left:10px;
+	margin-left:10px;
+	position:relative;
+	display:inline-block;
+	font-size:10px;
+	text-transform:uppercase;
+	font-family:"Montserrat", Arial;
+}
+.canais-contato li.tel-skype{
+	display:none;
+}
+.canais-contato li:not(.tel-whatsapp):before{
 	content: "";
     display: block;
     position: absolute;
@@ -613,14 +659,17 @@ span.CarOnPageCodigoProduto {
     width: 4px;
     height: 4px;
     background: <!--###PREF_1###-->;
-    border-radius: 50%;}
+    border-radius: 50%;
+}
 .canais-contato li:first-child{border:0;margin-left:0}
 .canais-contato li i{margin-right:10px;font-size:13px}
 .canais-contato .tel-whatsapp .fa{margin-right:8px;font-size:14px}
-
+.canais-contato ul li i {
+    display: none;
+}
 .contato a.telefone{
 	float:right;
-	font-family:'Ubuntu', sans-serif;
+	font-family:'Montserrat', Arial;
 	color:#666666;
 	font-size:14px;
 	margin-top:6px;
@@ -631,11 +680,15 @@ span.CarOnPageCodigoProduto {
     display: inline-block;
     padding: 5px 7px;
     color: <!--###PREF_1###-->;
-    left: 30px;
     position: absolute;
     line-height: 11px;
 	font-size: 11px;
-    font-family: 'Ubuntu', sans-serif;
+	top:-3px;
+	right:-14px;
+    font-family: 'Montserrat', Arial;
+}
+#barra-flutuante .quantidade{
+	right: 10px;
 }
 header .div-carrinho .fa-shopping-cart{
 	font-size:3rem;
@@ -653,12 +706,13 @@ header .div-carrinho .fa-shopping-cart{
 .contato ul li a:hover .fa-stack-2x{
 	color: <!--###PREF_29###-->;
 }
-header .login{
+header .login, #barra-flutuante .login{
 	display:inline-block;
 	position:relative;
-	margin: 15px 0;
+	margin: 15px 0 0 0;
+	cursor:pointer;
 }
-header .login a{
+header .login a, #barra-flutuante .login a{
 	display:inline-block;
 	position:relative;
 	font-size: 12px;
@@ -668,10 +722,8 @@ header .login a{
     display: inline;
     font-weight: 500;
 }
-header .login > a{
-	padding:15px 43px;
-}
-header .login > a:before{
+
+/*header .login > a:before{
 	content:"\f2c0";
 	font: normal normal normal 14px/1 FontAwesome;
     font-size: 30px;
@@ -700,6 +752,19 @@ header .login > a:after{
 	right:10px;
 	top: 50%;
 	transform:translateY(-50%);
+}*/
+header .login .icon, #barra-flutuante .login .icon{
+	display: inline-block;
+    vertical-align: -11px;
+    margin-right: 11px;
+}
+header .login .icon svg, #barra-flutuante .login .icon svg {
+    width: 30px;
+    height: 30px;
+    fill:<!--###PREF_1###-->;
+}
+header .login .icon svg *, #barra-flutuante .login .icon svg * {
+    stroke:<!--###PREF_1###--> !important;
 }
 header .div-carrinho .fa-shopping-cart{
 	font-size:3.5rem;
@@ -720,24 +785,24 @@ header .div-carrinho .fa-shopping-cart{
 .banner-row .fa-angle-left:hover:before{
 	opacity:1;
 }
-header .acessar-conta{
+header .acessar-conta, #barra-flutuante .acessar-conta{
 	display:none;
 }
-header .acessar-conta.active{
+header .login:hover .acessar-conta, #barra-flutuante .login:hover .acessar-conta{
 	display: block;
     position: absolute;
     top: 30px;
     background: <!--###PREF_1###-->;
-    padding: 20px;
-    left: 10px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+	padding: 0 20px;
     z-index: 9;
     width: 100%;
 }
-header .acessar-conta ul li a{
-	color:#8e8e8e;
+header .acessar-conta ul li a, #barra-flutuante .acessar-conta ul li a{
+	color: <!--###PREF_27###-->;
+	line-height: 35px;
+}
+header .acessar-conta ul li a:hover, #barra-flutuante ul li a:hover{
+	color: <!--###PREF_17###-->;
 }
 .acessar-conta fieldset{
 	margin-bottom:0;

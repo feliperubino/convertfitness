@@ -1,7 +1,7 @@
 /*FOOTER*/
 footer{
 	color: <!--###PREF_29###-->;
-	background:#000;
+	    background: linear-gradient(90deg,#77ef83,#00c9ff);
 }
 footer a {
 	transition: 0.2s ease;
@@ -63,9 +63,9 @@ footer #botao-news i {
 	padding: 0;
 	display: inline-block;
 }
-footer .footer-content {
+/*footer .footer-content {
 	padding: 60px 0 0 0;
-}
+}*/
 footer .footer-bottom{
 	background-color: white;
 	padding: 1rem 0;
@@ -155,9 +155,9 @@ footer input.form-erro {
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(236, 82, 82, 0.6);
 }
-footer .footer-content div{
+/*footer .footer-content div{
 	margin-bottom: 2.5rem;
-}
+}*/
 #footer-pagamento li {
 	margin: 0.5rem 0.5rem 0.5rem 0;
 }
@@ -245,4 +245,333 @@ footer .cadastrar-newsletter input[type="submit"]{
     transform: translateY(-50%);
 	opacity:1;
 	color:#efefef;
+}
+
+footer .institucional .news ul{
+    float: right;
+    margin: 28px 0;
+}
+
+footer:before {
+    content: '';
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(90deg,#6ad777,#00b5e5);
+    display: block;
+}
+
+.news ul li{
+    float: left;
+    margin-left: 10px;
+}
+
+.news ul li:nth-child(n+6){
+    display: none;
+}
+
+.news ul li a {
+    font-size: 16px;
+    line-height: 43px;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #d0f6fa inset;
+    background: #FFF;
+    box-sizing: border-box;
+    transition: box-shadow ease-out .2s;
+}
+
+.news ul li a i,
+.news ul li a:hover i{
+    color: #15d4f0;
+}
+
+.news ul li a:hover{
+    box-shadow: 0 0 0 21px #d0f6fa inset;
+}
+
+.news .msg {
+    float: left;
+    width: 318px;
+    padding-top: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.news .msg .icon svg {
+    float: left;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    left: -57px;
+    top: -34px;
+    transform: rotate(-15deg);
+    transform-origin: right;
+    z-index: -1;
+    fill: #4bd089;
+}
+
+.news .msg .first {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: -0.85px;
+}
+
+.news .msg .last {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    margin-top: 4px;
+}
+
+.news #formNews {
+    float: left;
+    width: calc(100% - 590px);
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.news #formNews .newsletter-cadastro {
+    position: relative;
+    margin: 28px 0;
+}
+
+.news #formNews .newsletter-cadastro button {
+    float: right;
+    border: 0px solid #444443;
+    border-radius: 30px;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #12c0c7;
+    transition: background ease-out .2s;
+    margin-left: 0;
+    background: #FFF;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+.news #formNews .newsletter-cadastro button svg {
+    fill: #12c0c7;
+    height: 10px;
+    width: 10px;
+    vertical-align: -.5px;
+}
+
+.newsletter-confirmacao {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 27px 10px;
+}
+
+.newsletter-confirmacao .icon-ok {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#rodape .institucional .news ul {
+    float: right;
+    margin: 28px 0;
+}
+.news ul li {
+    float: left;
+    margin-left: 10px;
+}
+.news ul li a {
+    font-size: 16px;
+    line-height: 43px;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #d0f6fa inset;
+    background: #FFF;
+    box-sizing: border-box;
+    transition: box-shadow ease-out .2s;
+}
+.news ul li a i, .news ul li a:hover i {
+    color: #15d4f0;
+}
+facebook:before {
+    content: "\f09a";
+}
+.news ul li a i, .news ul li a:hover i {
+    color: #15d4f0;
+}
+.news ul li a {
+    font-size: 16px;
+    line-height: 43px;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #d0f6fa inset;
+    background: #FFF;
+    box-sizing: border-box;
+    transition: box-shadow ease-out .2s;
+}
+.news #formNews .emailNews input {
+    width: calc(100%);
+    border: 0;
+    box-shadow: none;
+    height: 42px;
+    padding: 0 18px;
+    box-sizing: border-box;
+    display: block;
+    background: transparent;
+    border: 0px solid #444443;
+    font-size: 12px;
+    color: #6a6a69;
+    float: left;
+    border-radius: 30px;
+    background: #fff;
+}
+.news {
+    margin-bottom: 60px;
+}
+.news::after {
+    content: "";
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 6;
+}
+
+footer .titulo {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 0;
+    padding: 0;
+}
+
+footer .institucional ul {
+    margin: 0;
+}
+
+footer .links-rodape li {
+    list-style: none;
+    padding-left: 35px;
+    position: relative;
+}
+
+footer .links-rodape li::before {
+    content: "•";
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+footer .links-rodape li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer .institucional ul {
+    margin: 0;
+}
+
+footer .row-fluid .sobre-loja-rodape {
+    order: -1;
+    max-width: 360px;
+}
+
+footer .row-fluid .sobre-loja-rodape img {
+    max-width: 100%;
+    max-height: 90px;
+    display: block;
+    margin-bottom: 32px;
+}
+
+footer .row-fluid .sobre-loja-rodape img + .titulo {
+    display: none;
+}
+
+footer .row-fluid .sobre-loja-rodape p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+.selos>ul {
+    margin: 0;
+	display:inline-grid;
+}
+.selos li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.selos img[alt="Site Seguro"] {
+    padding: 10px;
+    background: #fff;
+}
+ul:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+@media screen and (min-width: 1025px){
+	.pagamento-selos .row-fluid .pagamento, .pagamento-selos .row-fluid .selos {
+		display: block;
+		float: none;
+		width: auto !important;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	
+	.selos .titulo {
+		padding-right: 11px !important;
+		margin: 0 !important;
+	}
+}
+
+.copy address {
+    display: inline;
+}
+.copy svg.netzee {
+    height: 23px;
+    vertical-align: -5px;
+    margin-left: 5px;
+}
+.copy {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bfbfbf;
+    padding: 15px 0;
+}
+.pagamento-selos + div p {
+    font-size: 13px;
+}
+.rodape{
+	background-color: #fff; 
+	border-top: 1px solid #ddd; 
+	position: relative;
+	z-index: 10;
+	font-size: 11px; 
+	display: block;
+}
+.rodape .cnpj{
+	text-align: center;
+	min-height: 20px; 
+	width: 100%;
 }

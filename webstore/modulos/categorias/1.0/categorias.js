@@ -14,6 +14,13 @@ $(document).ready(function(){
 		ajustaSubMenu();
 
 	} catch (e) { console.log(e.message); }
+	
+	$('.departamentos-nav > li').each(function(){
+		if($(this).find('ul').length > 0){
+			$(this).addClass('submenu');
+		}
+	})
+	
 });
 
 var filtro = "";
@@ -288,7 +295,7 @@ function ajustaNav2(){
 	var container = $('.departamentos-nav').width();
 	var itens = 0;
 
-	$('.menu-topo .departamentos-nav > li').each(function(index, el) {
+	$('.menu-topo .departamentos-nav > li:not(.todos-departamentos)').each(function(index, el) {
 		$(this).removeClass('hidden');
 
 		var itemWidth = $(this).width();

@@ -21,6 +21,7 @@
 	border-bottom: 2px solid <!--###PREF_12###-->;
 	color: <!--###PREF_4###-->;
 	padding: 1rem 2rem;
+	display:none;
 }
 #menu-drawer .menu-header a{
 	display: inline-block;
@@ -63,6 +64,7 @@
 }
 #menu-drawer .departamentos-nav{
 	padding-top: 1rem;
+	display:block;
 }
 #menu-drawer .departamentos-nav li{
 	display: block;
