@@ -66,7 +66,7 @@ function BlocoProduto(OBJ, TEMPLATE) {
                     }
                     if (PROMOCAO != 0) {
                         PORCENTAGEM = ((PRECO - PROMOCAO) / PRECO * 100).toFixed(0);
-                        ADD += '<span class="prod-desconto">' + PORCENTAGEM + '% desconto</span>';
+                        ADD += '<span class="prod-desconto">' + PORCENTAGEM + '% off</span>';
                         PRECODE = PRECO;
                         PRECO = PROMOCAO;
                         DESCONTO = PRECO / 100 * Number(OBJ.precos.desconto_avista);
@@ -92,16 +92,16 @@ function BlocoProduto(OBJ, TEMPLATE) {
                     }
                     if (VEZES > 1 && semJuros != 0) {
                         PARCELA = AjustaMoney(PARCELA);
-                        VEZES = '<p class="prod-preco-parc"><a href="' + LINK + '" title="' + TITLE + '">' + semJuros + 'x de R$' + PARCELA + ' sem juros</a></p>';
+                        //VEZES = '<p class="prod-preco-parc"><a href="' + LINK + '" title="' + TITLE + '">' + semJuros + 'x de R$' + PARCELA + ' sem juros</a></p>';
                     } else {
                         VEZES = 1;
                         PARCELA = "";
-                        VEZES = '<p class="prod-preco-parc"></p>';
+                        //VEZES = '<p class="prod-preco-parc"></p>';
                     }
                     if (PROMOCAO != 0) {
                         PRECO = "R$" + AjustaMoney(PRECODE);
                         PROMOCAO = "R$" + AjustaMoney(PROMOCAO);
-                        PRECO = '<p class="prod-preco"><a href="' + LINK + '" title="' + TITLE + '"><strike id="preco-de">' + PRECO + '</strike>' + PROMOCAO + '</a></p>';
+                        PRECO = '<p class="prod-preco"><a href="' + LINK + '" title="' + TITLE + '">' + PROMOCAO + '</a></p>';
                     } else {
                         PROMOCAO = "";
                         PRECO = AjustaMoney(PRECO);
@@ -115,7 +115,7 @@ function BlocoProduto(OBJ, TEMPLATE) {
                 } else {
                     // PRODUTO COM PREÃ‡O ZERO
                     UMA = '<p class="prod-preco-uma"></p>';
-                    VEZES = '<p class="prod-preco-parc"></p>';
+                    VEZES = '';
                     PROMOCAO = "";
                     PRECO = '<p class="prod-preco"></p>';
                     COMPRAR = '<div class="prod-botao-comprar"></div>';
@@ -142,7 +142,7 @@ function BlocoProduto(OBJ, TEMPLATE) {
                 }
             }
         }
-		var CARRINHO = '<a href="#" class="add-carrinho">Adicionar ao carrinho</a>';
+		var CARRINHO = '<a href="#" class="add-carrinho">Ver detalhes</a>';
         ADD += '</div>';
         var find = ["<!--##CLASS##-->", "<!--##FOTO##-->", "<!--##DESTAQUE##-->", "<!--##ADD##-->", "<!--##NOME##-->", "<!--##PRECO##-->", "<!--##VEZES##-->", "<!--##UMA##-->", "<!--##COMPRAR##-->", "<!--##MAIS##-->", "<!--##LINK##-->", "<!--##CARRINHO##-->"];
         var replace = [CLASS, FOTO, DESTAQUE, ADD, NOME, PRECO, VEZES, UMA, COMPRAR, MAIS, LINK, CARRINHO];

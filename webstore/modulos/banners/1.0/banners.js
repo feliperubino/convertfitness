@@ -113,6 +113,7 @@ function BannersRetorno() {
 								autoplaySpeed: 3000,
 							  	prevArrow: '<i class="fa fa-angle-left slick-prev"></i>',
 								nextArrow: '<i class="fa fa-angle-right slick-next"></i>',
+								dots: true,
 								autoplay: true
 							})
 							.css('visibility', 'visible');

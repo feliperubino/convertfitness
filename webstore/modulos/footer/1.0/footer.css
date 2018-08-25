@@ -1,7 +1,7 @@
 /*FOOTER*/
 footer{
 	color: <!--###PREF_29###-->;
-	    background: linear-gradient(90deg,#77ef83,#00c9ff);
+	background:linear-gradient(90deg,<!--###PREF_24###-->,<!--###PREF_25###-->);
 }
 footer a {
 	transition: 0.2s ease;
@@ -208,7 +208,7 @@ footer .contato ul{
 	margin-top:15px;
 }
 footer .contato ul li i.fa-stack-2x{
-	color:#fff;
+	color:<!--###PREF_1###-->;
 }
 footer .contato ul li i.fa-stack-1x{
 	color:#666666;
@@ -241,10 +241,11 @@ footer .cadastrar-newsletter input[type="submit"]{
 #fabricante-holder .slick-slider .slick-arrow{
 	display: block;
     font-size: 20px;
-    top: 57%;
+    top: 40%;
     transform: translateY(-50%);
 	opacity:1;
 	color:#efefef;
+	font-size:50px;
 }
 
 footer .institucional .news ul{
@@ -278,7 +279,7 @@ footer:before {
     display: block;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #d0f6fa inset;
-    background: #FFF;
+    background: <!--###PREF_1###-->;
     box-sizing: border-box;
     transition: box-shadow ease-out .2s;
 }
@@ -316,7 +317,7 @@ footer:before {
 .news .msg .first {
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
+    color: <!--###PREF_1###-->;
     text-transform: uppercase;
     display: block;
     letter-spacing: -0.85px;
@@ -324,7 +325,7 @@ footer:before {
 
 .news .msg .last {
     font-size: 16px;
-    color: #fff;
+    color: <!--###PREF_1###-->;
     display: block;
     margin-top: 4px;
 }
@@ -352,7 +353,7 @@ footer:before {
     color: #12c0c7;
     transition: background ease-out .2s;
     margin-left: 0;
-    background: #FFF;
+    background: <!--###PREF_1###-->;
     position: absolute;
     right: 0;
     padding-right: 20px;
@@ -366,14 +367,14 @@ footer:before {
 }
 
 .newsletter-confirmacao {
-    color: #fff;
+    color: <!--###PREF_1###-->;
     text-align: center;
     font-size: 14px;
     padding: 27px 10px;
 }
 
 .newsletter-confirmacao .icon-ok {
-    color: #fff;
+    color: <!--###PREF_1###-->;
     font-size: 18px;
     padding: 10px;
 }
@@ -395,7 +396,7 @@ footer:before {
     display: block;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #d0f6fa inset;
-    background: #FFF;
+    background: <!--###PREF_1###-->;
     box-sizing: border-box;
     transition: box-shadow ease-out .2s;
 }
@@ -417,7 +418,7 @@ facebook:before {
     display: block;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #d0f6fa inset;
-    background: #FFF;
+    background: <!--###PREF_1###-->;
     box-sizing: border-box;
     transition: box-shadow ease-out .2s;
 }
@@ -435,7 +436,7 @@ facebook:before {
     color: #6a6a69;
     float: left;
     border-radius: 30px;
-    background: #fff;
+    background: <!--###PREF_1###-->;
 }
 .news {
     margin-bottom: 60px;
@@ -444,18 +445,20 @@ facebook:before {
     content: "";
     display: block;
     clear: both;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid <!--###PREF_1###-->;
     position: relative;
     z-index: 6;
 }
 
 footer .titulo {
     font-size: 16px;
-    color: #fff;
+    color: <!--###PREF_1###-->;
     text-transform: uppercase;
     font-weight: 500;
     border: 0;
     padding: 0;
+	margin-bottom: 20px;
+	display: block;
 }
 
 footer .institucional ul {
@@ -468,6 +471,7 @@ footer .links-rodape li {
     position: relative;
 }
 
+
 footer .links-rodape li::before {
     content: "•";
     position: absolute;
@@ -477,16 +481,11 @@ footer .links-rodape li::before {
 
 footer .links-rodape li a {
     font-size: 14px;
-    color: #fff;
+    color: <!--###PREF_1###-->;
 }
 
 footer .institucional ul {
     margin: 0;
-}
-
-footer .row-fluid .sobre-loja-rodape {
-    order: -1;
-    max-width: 360px;
 }
 
 footer .row-fluid .sobre-loja-rodape img {
@@ -503,7 +502,7 @@ footer .row-fluid .sobre-loja-rodape img + .titulo {
 footer .row-fluid .sobre-loja-rodape p {
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: <!--###PREF_1###-->;
 }
 .selos>ul {
     margin: 0;
@@ -516,7 +515,7 @@ footer .row-fluid .sobre-loja-rodape p {
 }
 .selos img[alt="Site Seguro"] {
     padding: 10px;
-    background: #fff;
+    background: <!--###PREF_1###-->;
 }
 ul:after {
     display: table;
@@ -524,7 +523,7 @@ ul:after {
     clear: both;
 }
 @media screen and (min-width: 1025px){
-	.pagamento-selos .row-fluid .pagamento, .pagamento-selos .row-fluid .selos {
+	.selos .row-fluid .pagamento, .selos .row-fluid .selos {
 		display: block;
 		float: none;
 		width: auto !important;
@@ -541,6 +540,24 @@ ul:after {
 	.selos .titulo {
 		padding-right: 11px !important;
 		margin: 0 !important;
+	}
+	
+	footer .links-rodape.selos li{
+		padding-left:0;
+	}
+
+	footer .links-rodape.selos li:before{
+		display:none;
+		
+	}
+
+	footer .links-rodape.selos .titulo{
+		display: inline;
+		float: left;
+	}
+
+	footer .links-rodape.selos ul{
+		display: inline;
 	}
 }
 
@@ -559,19 +576,154 @@ ul:after {
     color: #bfbfbf;
     padding: 15px 0;
 }
-.pagamento-selos + div p {
+.rodape div p {
     font-size: 13px;
 }
 .rodape{
-	background-color: #fff; 
+	background-color: <!--###PREF_1###-->; 
 	border-top: 1px solid #ddd; 
 	position: relative;
 	z-index: 10;
 	font-size: 11px; 
 	display: block;
+	padding: 15px 0;
+	overflow:hidden;	
 }
 .rodape .cnpj{
 	text-align: center;
 	min-height: 20px; 
 	width: 100%;
+}
+
+
+@media screen and (max-width: 991px){
+	 .news{
+        margin-bottom: 27px;
+    }
+    
+    .news .msg{
+        float: none;
+        padding: 27px 0;
+        margin: 0;
+        text-align: center;
+        width: auto;
+    }
+    
+    .news .msg .text{
+        float: none;
+        text-align: center;
+        padding: 13px 0;
+    }
+    
+    .news #formNews{
+        float: none;
+        width: auto;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .news #formNews .newsletter-cadastro{
+        margin: 0;
+        margin-top: -10px;
+        padding: 0 0px 19px 0px;
+    }
+    
+    .news #formNews label{
+        margin: 0;
+    }
+    
+    .news #formNews .emailNews input{
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        text-align: left;
+        padding-right: 40px;
+    }
+    
+    .news #formNews .newsletter-cadastro button{
+        width: 40px;
+        margin-top: 0;
+        height: 50px;
+        padding: 0;
+        font-size: 0;
+        background: none;
+    }
+    
+    .news #formNews .newsletter-cadastro button svg{
+        width: 22px;
+        height: 15px;
+    }
+
+    footer .institucional .news ul{
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer .institucional .news ul li{
+        display: inline-block;
+        float: none;
+        margin: 0 5px;
+    }
+	
+	.links-rodape ul, .links-rodape p.expandir{
+		display:none;
+	}
+	.links-rodape ul.open, .links-rodape p.expandir.open{
+		display:block;
+	}
+	
+	.departamentos-nav > li.submenu:hover > a:before,
+	#menu-drawer .departamentos-nav > li > a.com-sub:after{
+		content: "";
+		display:none;
+	}
+	
+	#menu-drawer .departamentos-nav > li > a{
+		position:relative;
+	}
+	
+	#menu-drawer .departamentos-nav > li > a.com-sub:before{
+		content: "\f107";
+		font: normal normal normal 13px/1 FontAwesome;
+		font-size: 13px;
+		position: absolute;
+		display: block;
+		height: 15px;
+		width: 15px;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+}
+
+@media screen and (max-width: 1024px){
+	footer .titulo::after {
+		content: "\f107";
+		font-family: FontAwesome;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 20px;
+		line-height: 20px;
+		display: block;
+		right: 0;
+	}
+		
+	footer .links-rodape li {
+		list-style: none;
+		padding-left: 10px;
+		position: relative;
+	}
+	
+	footer ul.open{
+		max-height: 500px;
+		padding-bottom: 25px;
+		list-style:none;
+	}
+	
+	footer .links-rodape li::before{
+		content:"";
+	}
 }

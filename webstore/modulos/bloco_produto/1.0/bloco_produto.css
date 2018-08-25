@@ -170,7 +170,7 @@ h3.lst-produtos-titulo:before{
 }
 
 .list-item:hover .div-item {
-	box-shadow: 0px 2px 3px 7px rgba(0, 0, 0, 0.09);
+	background:rgba(255,255,255,0);
 }
 .div-item .prod-detalhes
 {
@@ -214,19 +214,31 @@ h3.lst-produtos-titulo:before{
     text-align:left;
 	display:inline-block;
 }
+
 .div-item .prod-info a.add-carrinho{
-	color: #fff;
-    display: inline-block;
+	display:none;
+}
+.div-item:hover .prod-info a.add-carrinho{
+	position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 50px;
+    background: #46efcf;
+    border-radius: 0;
+    border: 0;
+    padding: 15px 0 0 20px;
     text-transform: uppercase;
-    padding: 10px 15px 8px 58px;
-    border-radius: 3px;
-    background: #bed942;
-    width: 180px;
-    line-height: 14px;
-    font-size: 12px;
-    font-family: 'Ubuntu', sans-serif;
-	margin-bottom:20px;
-	position:relative;
+    text-shadow: none;
+    transition: opacity ease-out .2s,transform ease-out .2s;
+    transform: scale(.9);
+    color: #fff;
+    text-align: center;
+	display:block;
+	opacity:1 !important;
+	font-size: 18px;
 }
 .div-item .prod-info a.add-carrinho:hover{
 	opacity:0.8;
@@ -289,17 +301,23 @@ h3.lst-produtos-titulo:before{
 }
 .div-item .prod-info .prod-nome a
 {
+    font-size: 14px;
     line-height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    color: #222;
-	font-family:'Ubuntu', sans-serif;
-	font-size:14px;
-	height:37px;
+    color: #666666;
+    text-align: center;
+    font-weight: 400;
+    height: 40px;
+    min-height: 0 !important;
+    margin-bottom: 18px;
+    display: block;
+    overflow: hidden;
+	text-transform:uppercase;
 }
 .div-item .prod-info .prod-preco
 {
     margin:7px 0 0 0;
+	text-align: center;
+    width: 100%;
 }
 .div-item .prod-info .produto-indisponivel a
 {
@@ -317,12 +335,13 @@ h3.lst-produtos-titulo:before{
 }
 
 .div-item .prod-info .prod-preco a {
-	color:#222222;
-	display: block;
-	font-size: 18px;
-	font-weight: 500;
-	height: 20px;
-	font-family:'Ubuntu', sans-serif;
+    font-size: 25.86px;
+    color: #2c2c2c;
+    font-weight: 700;
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+	text-align:center;
 }
 .div-item .prod-info .prod-preco .tarja-indisponivel
 {
@@ -400,18 +419,23 @@ h3.lst-produtos-titulo:before{
 }
 
 .div-item .add span{
-	background-color: <!--###PREF_48###-->;
-	color: white;
-	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
-	border: 1px solid white;
-	font-size: 10px;
-	font-weight: 600;
-	padding: 0.2rem 1.3rem;
-	text-transform: uppercase;
-	display: inline-block;
-	float: right;
-	margin-top: 1rem;
-	margin-right: 1rem;
+	width: 48px;
+    height: 48px;
+    padding: 0;
+    display: block;
+    border-radius: 50%;
+    background: #ff9000;
+    text-align: center;
+    line-height: 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 12px 3px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+	color: #fff;
 }
 .div-item .add span.prod-lancamento{
 	float: left;
@@ -480,3 +504,104 @@ h3.lst-produtos-titulo:before{
 #grupo-produtos .grupos li.active a:before,
 #grupo-produtos .grupos li a:hover:before{content:"";background:#631ca8;display:block;height:5px;width:150px;position:absolute;top:0;left:0;}
 .banner-central img{display:block;width:100%;height:auto;margin-bottom:70px;}
+
+
+
+.flexslider {
+    background: 0;
+    margin: 0;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.titulo-categoria {
+    font-size: 27.49px;
+    color: #2c2c2c;
+    font-weight: 200;
+    padding-left: 0 !important;
+    margin: 60px 0 28px 0 !important;
+    text-align: center;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    background: transparent !important;
+	font-family: Montserrat, Arial !important;
+}
+
+.titulo-categoria strong {
+    font-weight: 300;
+    background: #fff;
+    display: inline-block;
+    padding: 0 37px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.titulo-categoria::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 1px;
+    margin: auto;
+    background: #e6e0df;
+    z-index: -1;
+}
+
+.div-conteudo .slick-arrow{
+    fill: #cdcdcd;
+}
+.div-conteudo .slick-arrow:hover{
+    fill: #666666;
+}
+
+.div-conteudo .slick-prev{
+    position: absolute;
+    top: 0;
+    left: -26px;
+    bottom: 0;
+    height: 45px;
+    width: 45px;    
+    z-index: 2;
+    cursor: pointer;
+    margin: auto;
+}
+
+.div-conteudo .slick-next{
+    position: absolute;
+    top: 0;
+    right: -26px;
+    bottom: 0;
+    height: 45px;
+    width: 45px;
+    z-index: 2;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+.slick-slider{
+    display: block !important;
+}
+
+#div-conteudo .slick-prev{
+	left: -30px;
+}
+
+#div-conteudo .slick-next{
+	right: -30px;
+}
+
+#div-conteudo .slick-slider .slick-arrow{
+	opacity:1;
+}
+
+#div-conteudo .slick-slider svg{
+	fill: #cdcdcd;
+	height: 45px;
+    width: 45px;
+}

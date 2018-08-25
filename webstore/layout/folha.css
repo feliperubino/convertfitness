@@ -336,7 +336,7 @@ span.CarOnPageCodigoProduto {
 	opacity: 1;
 	top: 0;
 	visibility: visible;
-	background: linear-gradient(90deg,#77ef83,#00c9ff);
+	background: linear-gradient(90deg,<!--###PREF_18###-->,<!--###PREF_19###-->);
 }
 #barra-flutuante nav {
 	max-height: 0rem;
@@ -593,13 +593,13 @@ span.CarOnPageCodigoProduto {
 
 /*	*/
 .header-content .contato{
-	background: linear-gradient(90deg,#70e37d,#00bff2);
+	background: linear-gradient(90deg,<!--###PREF_18###-->,<!--###PREF_19###-->);
 	margin-bottom:0;
 	border:none;
 	line-height:32px;
 }
 .menu-principal{
-	background:linear-gradient(90deg,#77ef83,#00c9ff);
+	background:linear-gradient(90deg,<!--###PREF_24###-->,<!--###PREF_25###-->);
 	padding-top:25px;
 	padding-bottom:25px;
 }
