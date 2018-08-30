@@ -83,11 +83,14 @@ header .input-busca, #barra-flutuante .input-busca {
 }
 header .input-busca + .fa-search, #barra-flutuante .input-busca + .fa-search {
 	position: absolute;
-    right: 20px;
+    right:13px;
     top: 50%;
     transform: translateY(-50%);
     color: #ff9000;
     font-size: 26px;
+}
+#barra-flutuante .input-busca + .fa-search {
+	right:0;
 }
 header .botao-busca {
 	background-color: <!--###PREF_2###-->;
@@ -116,6 +119,7 @@ header .botao-busca i{
 }
 header .logo-holder{
 	overflow: hidden;
+	padding: 7px 0;
 }
 header .logotipo {
 	margin: 0;
@@ -141,7 +145,7 @@ header .div-carrinho, #barra-flutuante .div-carrinho {
 	color: #666;
 	display: inline-block;
 	float: right;
-	margin: 15px 0 0 0;
+	margin: 8px 0 0 0;
 	position: relative;
 }
 header .div-carrinho svg, #barra-flutuante .div-carrinho svg{
@@ -366,7 +370,7 @@ span.CarOnPageCodigoProduto {
 	display: inline-block;
 	font-size: 2rem;
 	line-height: 4rem;
-	padding: 0;
+    padding-top: 5px;
 	position: relative;
 	text-align: center;
 	width: 4rem;
@@ -382,6 +386,7 @@ span.CarOnPageCodigoProduto {
 	text-align: center;
 	width: 180px;
     margin-right: 15px;
+	padding-top:11px;
 }
 #barra-flutuante .logotipo > a {
 	display: block;
@@ -410,6 +415,7 @@ span.CarOnPageCodigoProduto {
 	padding: 0 1rem;
 	width: 100%;
 	padding-left:45px;
+	padding: 0 55px 0 16px;
 }
 #barra-flutuante .botao-busca {
 	background-color: <!--###PREF_2###-->;
@@ -454,7 +460,7 @@ span.CarOnPageCodigoProduto {
 #barra-flutuante .div-carrinho {
 	display: block;
 	float: right;
-	margin: 1.2rem 0;
+	margin: 19px 0 0 0;
 	padding: 0;
 	position: relative;
 	text-align: center;
@@ -623,6 +629,10 @@ span.CarOnPageCodigoProduto {
 	font-size:16px;
 }
 
+.contato ul li .telefone-topo a i{
+	display:none;
+}
+
 .contato ul li a:hover .fa-stack,
 .contato ul li a:hover i{
 	color:<!--###PREF_17###-->
@@ -709,9 +719,14 @@ header .div-carrinho .fa-shopping-cart{
 header .login, #barra-flutuante .login{
 	display:inline-block;
 	position:relative;
-	margin: 15px 0 0 0;
+	margin: 10px 0 0 0;
 	cursor:pointer;
 }
+
+#barra-flutuante .login{
+	    margin: 21px 0 0 0;
+}
+
 header .login a, #barra-flutuante .login a{
 	display:inline-block;
 	position:relative;
@@ -791,12 +806,15 @@ header .acessar-conta, #barra-flutuante .acessar-conta{
 header .login:hover .acessar-conta, #barra-flutuante .login:hover .acessar-conta{
 	display: block;
     position: absolute;
-    top: 30px;
+    top: 34px;
     background: <!--###PREF_1###-->;
 	padding: 0 20px;
     z-index: 9;
     width: 100%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 }
+
+
 header .acessar-conta ul li a, #barra-flutuante .acessar-conta ul li a{
 	color: <!--###PREF_27###-->;
 	line-height: 35px;

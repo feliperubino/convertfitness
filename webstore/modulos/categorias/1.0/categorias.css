@@ -39,7 +39,7 @@ nav#float-menu, nav.menu-topo{
 	display: block;
     min-width: 0;
     background: #fff;
-    padding: 30px 40px 40px 0px;
+    padding: 30px 40px 22px 0px;
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
@@ -129,7 +129,7 @@ nav#float-menu, nav.menu-topo{
 	color: <!--###PREF_17###-->;
     text-shadow: 0 0 <!--###PREF_17###-->;
 }
-.departamentos-nav > li.submenu:hover > a:before{
+/*.departamentos-nav > li.submenu:hover > a:before{
 	content: "\f107";
 	font: normal normal normal 13px/1 FontAwesome;
 	font-size:13px;
@@ -140,7 +140,7 @@ nav#float-menu, nav.menu-topo{
 	right: -20px;
     top: 50%;
     transform: translateY(-50%);
-}
+}*/
 .departamentos-nav > li.submenu:hover > a:after{
 	content: "";
 	font: normal normal normal 13px/1 FontAwesome;

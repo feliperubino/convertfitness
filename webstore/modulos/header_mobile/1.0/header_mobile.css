@@ -6,7 +6,7 @@
 	position: fixed;
 	width: 100%;
 	top: 0;
-	z-index: 97;
+	z-index: 100;
 }
 #mobile-placeholder {
 	display: block;

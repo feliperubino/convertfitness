@@ -238,7 +238,7 @@ function CategoriasListaRetorno() {
 
 function dropDownMenu(){
 
-	$('.departamentos-nav li').off();
+	/*$('.departamentos-nav li').off();
 	$('.departamentos-nav li').hover(function() {
 	    $(this).closest('li').find('>ul').css({
 	        'opacity':0,
@@ -255,7 +255,7 @@ function dropDownMenu(){
 	    .fadeOut(200,function(){
 	         $(this).hide();   
 	    });
-	});
+	});*/
 }
 
 function ajustaNav(){

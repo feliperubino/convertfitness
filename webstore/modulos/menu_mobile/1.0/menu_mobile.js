@@ -67,9 +67,9 @@ function ajustaSubMenu(){
 }
 
 function abreSubMenu(ID){
-	var ul = $('#'+ID+' > ul').html();
+	var ul = $('body').find('#'+ID+' ul');
 	var nome = $('#'+ID+' > a').html();
-	$('#'+ID+' ul').hide();
+	/*$('#'+ID+' ul').hide();
 	$('#menu-drawer .container .row > div').append('<div class="subcategoria '+ID+'"><div class="categoria-header"><a href=""><i class="fa fa-angle-left"></i>'+nome+'</a></div><div class="categoria-body"><ul class="departamentos-nav">'+ul+'</ul></div></div>');
 	$('.subcategoria.'+ID+' .categoria-header a').attr('href', 'javascript:void(fechaSubMenu("'+ID+'"))');
 	$('.subcategoria.'+ID).fadeIn('fast');
@@ -77,7 +77,8 @@ function abreSubMenu(ID){
 		visibility: 'visible',
 		left: '0'
 	})
-	ajustaSubMenu();
+	ajustaSubMenu();*/
+	ul.slideToggle('open');
 }
 
 function fechaSubMenu(ID){

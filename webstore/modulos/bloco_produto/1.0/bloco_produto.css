@@ -204,8 +204,8 @@ h3.lst-produtos-titulo:before{
 .div-item .prod-info
 {
     position: initial;
-
     padding: 0 5px;
+	text-align:center;
 }
 .div-item .prod-info p
 {
@@ -229,7 +229,7 @@ h3.lst-produtos-titulo:before{
     background: #46efcf;
     border-radius: 0;
     border: 0;
-    padding: 15px 0 0 20px;
+    padding: 10px 0 0 20px;
     text-transform: uppercase;
     text-shadow: none;
     transition: opacity ease-out .2s,transform ease-out .2s;
@@ -243,7 +243,7 @@ h3.lst-produtos-titulo:before{
 .div-item .prod-info a.add-carrinho:hover{
 	opacity:0.8;
 }
-.div-item .prod-info a.add-carrinho:before{
+/*.div-item .prod-info a.add-carrinho:before{
 	content: "\f07a";
 	display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -257,6 +257,16 @@ h3.lst-produtos-titulo:before{
     font-size: 25px;
     top: 50%;
     transform: translateY(-50%);
+}*/
+.div-item .prod-info a.add-carrinho svg{
+	fill: #fff !important;
+    width: 28px !important;
+    height: 28px !important;
+    vertical-align: -6px;
+    margin-right: 5px;
+}
+.div-item .prod-info a.add-carrinho svg path {
+    stroke: #fff !important;
 }
 .div-item .prod-info .prod-fabricante{
     display: block;
@@ -472,10 +482,13 @@ h3.lst-produtos-titulo:before{
     }
     .div-item .prod-info .prod-nome a
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
+@media screen and (max-width: 991px){
+	.div-item:hover .prod-info a.add-carrinho{display:none;}
+}
 
 .produtos{font-family:'Ubuntu', sans-serif;color:#222222;}
 .produtos img{display:block;width:100%;height:auto;}
@@ -604,4 +617,27 @@ h3.lst-produtos-titulo:before{
 	fill: #cdcdcd;
 	height: 45px;
     width: 45px;
+}
+
+s.preco-venda {
+    color: #5e5c5c;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+s.preco-venda::before{
+	height: 1px;
+    background: #f0555f;
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    left: -11px;
+    right: -11px;
+    margin: auto;
+    display: block;
+    content: "";
 }

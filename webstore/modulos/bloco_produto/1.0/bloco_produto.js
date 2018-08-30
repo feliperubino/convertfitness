@@ -105,7 +105,7 @@ function BlocoProduto(OBJ, TEMPLATE) {
                     } else {
                         PROMOCAO = "";
                         PRECO = AjustaMoney(PRECO);
-                        PRECO = '<p class="prod-preco"><a href="' + LINK + '" title="' + TITLE + '">R$' + PRECO + '</a></p>';
+                        PRECO = '<s class="preco-venda ">R$ 9.658,22</s><p class="prod-preco"><a href="' + LINK + '" title="' + TITLE + '">R$' + PRECO + '</a></p>';
                     }
                     if (OBJ.links.botao_comprar != null && OBJ.links.botao_comprar != undefined) {
                         COMPRAR = '<div class="prod-botao-comprar">';
@@ -142,7 +142,7 @@ function BlocoProduto(OBJ, TEMPLATE) {
                 }
             }
         }
-		var CARRINHO = '<a href="#" class="add-carrinho">Ver detalhes</a>';
+		var CARRINHO = '<a href="#" class="add-carrinho"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 212.962 264" style="enable-background:new 0 0 212.962 264;" xml:space="preserve"><path style="fill:none;stroke:#000000;stroke-width:17.5;stroke-miterlimit:10;" d="M192.969,255.25H19.993   c-6.21,0-11.243-5.034-11.243-11.243V78.967c0-6.21,5.034-11.243,11.243-11.243h172.975c6.21,0,11.243,5.034,11.243,11.243v165.04   C204.212,250.216,199.178,255.25,192.969,255.25z"></path><path d="M106.482,17.369c25.098,0,45.892,20.853,48.179,47.263c0.138,1.595,0.209,33.21,0.209,34.842h16.128   c0-1.855-0.068-33.694-0.202-35.514C168.165,28.301,140.243,0,106.482,0c-34.098,0-62.24,28.869-64.386,65.031   c-0.087,1.47-0.132,32.951-0.132,34.444h16.13c0-1.215,0.039-32.42,0.116-33.615C59.949,38.871,80.997,17.369,106.482,17.369z"></path></svg> Ver detalhes</a>';
         ADD += '</div>';
         var find = ["<!--##CLASS##-->", "<!--##FOTO##-->", "<!--##DESTAQUE##-->", "<!--##ADD##-->", "<!--##NOME##-->", "<!--##PRECO##-->", "<!--##VEZES##-->", "<!--##UMA##-->", "<!--##COMPRAR##-->", "<!--##MAIS##-->", "<!--##LINK##-->", "<!--##CARRINHO##-->"];
         var replace = [CLASS, FOTO, DESTAQUE, ADD, NOME, PRECO, VEZES, UMA, COMPRAR, MAIS, LINK, CARRINHO];

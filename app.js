@@ -120,6 +120,6 @@ function replaceStr(str, find, replace) {
 
 htmlModulos();
 
-app.listen(3000, function(){
-	console.log("server runing on port 3000");
+app.listen(3030, function(){
+	console.log("server runing on port 3030");
 });

@@ -54,3 +54,22 @@
 	width: 40%;
 	width: calc(50% - 2rem);
 }
+#prod-destaque .flexslider .slides img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+@media screen and (max-width: 991px){
+	#div-conteudo .slick-prev{
+		left: -10px;
+	}
+	#div-conteudo .slick-next{
+		right: -10px;
+	}
+	#div-conteudo .slick-slider svg {
+		fill: #cdcdcd;
+		height: 21px;
+		width: 21px;
+	}
+}
